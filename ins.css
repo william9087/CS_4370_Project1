@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(48, 37, 23);
+}
+
+#instructionbg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 460px;
+  border-radius: 50px;
+  border: 10px solid rgb(105, 105, 105);
+  border-style: outset;
+}
+
+#instruction {
+  position: absolute;
+  color: white;
+  font-family: "URW Chancery L", cursive;
+  z-index: 3;
+  font-size: 23px;
+  width: 280px;
+  top: 28%;
+  right: 32%;
+  background-color: rgba(29, 23, 23, 0.1);
+}
+
+#back {
+  position: absolute;
+  z-index: 3;
+  width: 110px;
+  height: 110px;
+  right: 23%;
+  top: 66%;
+}

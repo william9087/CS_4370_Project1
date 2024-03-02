@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(48, 37, 23);
+}
+
+.winlose {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#winnerbg {
+    width: 520px;
+    height: 290px;
+    border-radius: 50px;
+    border: 10px solid rgb(105, 105, 105);
+    border-style: outset;
+    margin-bottom: 20px;
+}
+
+#loserbg {
+    width: 520px;
+    height: 290px;
+    border-radius: 50px;
+    border: 10px solid rgb(105, 105, 105);
+    border-style: outset;
+    margin-bottom: 20px;
+}
+
+
+#player1 {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    width: 135px;
+    height: 135px;
+}
+
+#player1:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+#player2 {
+    position: absolute;
+    left: 40%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 150px;
+
+}
+
+#player2:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+#player3 {
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+}
+
+#player3:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+#player4 {
+    position: absolute;
+    left: 60%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+}
+
+#player4:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+#back {
+    left: 8%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 170px;
+    position: fixed;
+}
+
+#back:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+#homescreen {
+    left: 92%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 170px;
+    position: fixed;
+}
+
+#homescreen:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    animation: confettiAnimation 5s linear infinite;
+}
+
+@keyframes confettiAnimation {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        transform: translateX(-50%) translateY(100vh);
+    }
+}
